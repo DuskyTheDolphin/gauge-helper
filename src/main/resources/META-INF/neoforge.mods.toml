@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+issueTrackerURL="https://github.com/DuskyTheDolphin/gauge-helper/issues"
+
+[[mods]]
+modId="forgeward_gaugehelper"
+version="1.0.7"
+displayName="Gauge Helper"
+authors="DuskyTheDolphin"
+displayURL="https://github.com/DuskyTheDolphin/gauge-helper"
+description='''
+Client-only helpers on Create's Factory Gauge screen: how many to send for a chance recipe, a suggested input amount, and
+saved gauge presets with a two-click Apply and an Undo. All off by default, in forgeward_gaugehelper-client.toml. They
+only inform or fill the screen's own fields; what a gauge sends is unchanged.
+'''
+
+[[dependencies.forgeward_gaugehelper]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1,)"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies.forgeward_gaugehelper]]
+    modId="create"
+    type="required"
+    versionRange="[6.0,)"
+    ordering="NONE"
+    side="CLIENT"
+
+[[mixins]]
+    config="forgeward_gaugehelper.mixins.json"

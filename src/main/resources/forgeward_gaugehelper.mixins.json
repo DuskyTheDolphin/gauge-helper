@@ -1,0 +1,14 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "com.forgeward.gaugehelper.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "client": [
+    "FactoryPanelScreenAccess",
+    "SimiScreenAccess"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}
